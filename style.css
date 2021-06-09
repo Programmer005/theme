@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Source sans pro;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 2.75rem;
+  margin: 1rem;
+}
+
+.grid {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 2rem;
+}
+
+.pokemon-card {
+  height: 35vh;
+  border: 3px solid lightcoral;
+  width: 30vw;
+  border-radius: 1rem;
+  transition: transform 150ms;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+}
+
+.pokemon-name {
+  font-size: 1.5rem;
+}
